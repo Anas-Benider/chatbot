@@ -1,0 +1,66 @@
+# Root .gitignore for a Python backend and React frontend project
+
+# Global system files
+.DS_Store
+Thumbs.db
+
+# Node modules (both backend and frontend if applicable)
+**/node_modules/
+
+# Python specific ignores
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
+
+# Python virtual environments (if used in backend)
+**/venv/
+**/.venv/
+**/env/
+**/.env/
+
+# Python project files
+**/.mypy_cache/
+**/.pytest_cache/
+**/.coverage
+**/coverage.xml
+**/.tox/
+**/.hypothesis/
+
+# Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# Logs
+**/*.log
+
+# Environment variable files (e.g., for Flask/Django)
+**/.env
+**/.env.*
+
+# React build output
+frontend/build/
+frontend/.next/
+frontend/.cache/
+
+# React testing coverage
+frontend/coverage/
+
+# Miscellaneous
+*.sqlite3
+*.db
+*.lock
+*.bak
+*.swp
+*.tmp
+*.orig
+
+# Editor/IDE specific
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS generated files
+ehthumbs.db
+Icon?
