@@ -3,6 +3,8 @@ import { Link } from "react-router"
 import { Button } from "./components/ui/button"
 import { FileTextIcon, HomeIcon, UploadIcon } from "lucide-react"
 import { cn } from "./lib/utils"
+import DocumentUpload from "./components/features/rh/documentUpload"
+import DocumentList from "./components/features/rh/documentList"
 
 export default function HrPage() {
   const [activeTab, setActiveTab] = useState("upload")
@@ -55,7 +57,7 @@ export default function HrPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold text-cnexia-700">Télécharger des documents</h2>
                 <p className="text-muted-foreground">Ajoutez de nouveaux documents pour les utilisateurs.</p>
-                {/* <DocumentUpload onSuccess={() => setActiveTab("documents")} /> */}
+                <DocumentUpload onSuccess={() => setActiveTab("documents")} />
               </div>
             )}
 
@@ -63,7 +65,7 @@ export default function HrPage() {
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold text-cnexia-700">Espace documents</h2>
                 <p className="text-muted-foreground">Gérez tous les documents disponibles.</p>
-                {/* <DocumentList isHR={true} /> */}
+                <DocumentList isHR={true} />
               </div>
             )}
           </div>
