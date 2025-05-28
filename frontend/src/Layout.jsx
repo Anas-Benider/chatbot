@@ -1,5 +1,6 @@
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 import { Toaster } from "./components/ui/sonner";
+import Login from "./login";
 
 export default function Layout() {
     return (
@@ -8,24 +9,13 @@ export default function Layout() {
                 <div className="w-full pr-10 pl-4 flex items-center justify-between h-16">
                     <img src="/cnexia-No-bg.png" className="size-18" alt="" />
                     <nav className="flex items-center gap-4">
-                        <a
-                            href="/"
+                        <Link
+                            to="/"
                             className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
                         >
                             Accueil
-                        </a>
-                        <a
-                            href="/hr"
-                            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            Espace RH
-                        </a>
-                        <a
-                            href="/user"
-                            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                        >
-                            Espace Utilisateur
-                        </a>
+                        </Link>
+                        <Login/>
                     </nav>
                 </div>
             </header>

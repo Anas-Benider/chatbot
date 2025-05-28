@@ -196,7 +196,7 @@ export default function DocumentUpload() {
                                 Document téléchargé avec succès!
                             </span>
                         ) : (
-                            <span className="flex items-center gap-2">
+                            <span className="flex items-center gap-2 hover:cursor-pointer">
                                 <UploadIcon className="w-4 h-4" />
                                 Télécharger le document
                             </span>

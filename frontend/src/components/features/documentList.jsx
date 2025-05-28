@@ -197,7 +197,7 @@ export default function DocumentList({isHR}) {
                           <Button
                             variant="ghost"
                             size="icon"
-                            title="Voir"
+                            title="Visualiser"
                             className="hover:text-green-700 hover:bg-green-50"
                             onClick={() => window.open(getDocumentViewUrl(doc.id), "_blank")}
                           >
@@ -216,7 +216,7 @@ export default function DocumentList({isHR}) {
                             <Button
                               variant="ghost"
                               size="icon"
-                              title="Traiter pour le chatbot"
+                              title="Traitement pour chatbot"
                               className="hover:text-green-700 hover:bg-green-50"
                               onClick={() => handleProcessDocument(doc.id)}
                               disabled={processingDocument === doc.id}

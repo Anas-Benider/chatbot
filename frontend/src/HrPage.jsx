@@ -4,7 +4,7 @@ import { Button } from "./components/ui/button"
 import { FileTextIcon, HomeIcon, UploadIcon } from "lucide-react"
 import { cn } from "./lib/utils"
 import DocumentUpload from "./components/features/rh/documentUpload"
-import DocumentList from "./components/features/rh/documentList"
+import DocumentList from "./components/features/documentList"
 
 export default function HrPage() {
   const [activeTab, setActiveTab] = useState("upload")
@@ -12,7 +12,7 @@ export default function HrPage() {
   return (
     <div className="w-full px-10 py-8">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-bold text-cnexia-800">Espace RH</h1>
+        <h1 className="text-3xl font-bold text-cnexia-800">Espace Admin</h1>
         <Link to="/">
           <Button variant="outline" size="sm">
             <HomeIcon className="w-4 h-4 mr-2" />

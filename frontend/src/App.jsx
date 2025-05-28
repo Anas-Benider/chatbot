@@ -29,7 +29,7 @@ function App() {
                   </Link>
                   <Link to="/hr">
                     <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                      Espace RH
+                      Espace Admin
                     </Button>
                   </Link>
                 </div>
@@ -74,7 +74,7 @@ function App() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <FileTextIcon className="w-6 h-6 text-green-600" />
-                  Espace RH
+                  Espace Admin
                 </CardTitle>
                 <CardDescription>Gérez et téléchargez des documents pour les utilisateurs</CardDescription>
               </CardHeader>
@@ -94,7 +94,7 @@ function App() {
                   </li>
                 </ul>
                 <Link to="/hr">
-                  <Button className="w-full bg-green-600 hover:cursor-pointer">Accéder à l'espace RH</Button>
+                  <Button className="w-full bg-green-600 hover:cursor-pointer">Accéder à l'espace Admin</Button>
                 </Link>
               </CardContent>
             </Card>
